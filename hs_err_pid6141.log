@@ -1,0 +1,183 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3174), pid=6141, tid=3065338736
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_20-b02
+# Java VM: Java HotSpot(TM) Server VM (16.3-b01 mixed mode linux-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x08597000):  JavaThread "Unknown thread" [_thread_in_vm, id=6146, stack(0xb6b05000,0xb6b56000)]
+
+Stack: [0xb6b05000,0xb6b56000],  sp=0xb6b54810,  free space=13eb6b56000k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x68c972]
+V  [libjvm.so+0x2a51af]
+V  [libjvm.so+0x243d0a]
+V  [libjvm.so+0x249d21]
+V  [libjvm.so+0x61e06f]
+V  [libjvm.so+0x61c2d5]
+V  [libjvm.so+0x61b196]
+V  [libjvm.so+0x61ae50]
+V  [libjvm.so+0x61f7ba]
+V  [libjvm.so+0x61f84c]
+V  [libjvm.so+0x61f910]
+V  [libjvm.so+0x61f6f9]
+V  [libjvm.so+0x6663ea]
+V  [libjvm.so+0x667a6f]
+V  [libjvm.so+0x36018c]
+V  [libjvm.so+0x650b2d]
+V  [libjvm.so+0x3b7aa6]
+C  [java+0x305c]
+C  [java+0x1942]  JavaMain+0x72
+C  [libpthread.so.0+0x5cc9]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x08597000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6146, stack(0xb6b05000,0xb6b56000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+08048000-08052000 r-xp 00000000 08:01 656745     /opt/java/jdk1.6.0_20/bin/java
+08052000-08053000 rwxp 00009000 08:01 656745     /opt/java/jdk1.6.0_20/bin/java
+08591000-085f6000 rwxp 00000000 00:00 0          [heap]
+8119f000-81204000 r-xs 004cb000 08:01 1180369    /opt/android-sdk-linux_x86/platforms/android-8/android.jar
+81204000-81205000 ---p 00000000 00:00 0 
+81205000-81285000 rwxp 00000000 00:00 0 
+81285000-81286000 ---p 00000000 00:00 0 
+81286000-8130e000 rwxp 00000000 00:00 0 
+8130e000-81326000 rwxp 00000000 00:00 0 
+81326000-81336000 rwxp 00000000 00:00 0 
+81336000-8141d000 rwxp 00000000 00:00 0 
+8141d000-81425000 rwxp 00000000 00:00 0 
+81425000-8143d000 rwxp 00000000 00:00 0 
+8143d000-8144d000 rwxp 00000000 00:00 0 
+8144d000-81533000 rwxp 00000000 00:00 0 
+81533000-8153c000 rwxp 00000000 00:00 0 
+8153c000-815af000 rwxp 00000000 00:00 0 
+815af000-825b0000 rwxp 00000000 00:00 0 
+825b0000-855b0000 rwxp 00000000 00:00 0 
+855b0000-87480000 rwxp 00000000 00:00 0 
+87480000-a4310000 rwxp 00000000 00:00 0 
+a4310000-a5270000 rwxp 00000000 00:00 0 
+a5270000-b39b0000 rwxp 00000000 00:00 0 
+b39b4000-b39bd000 rwxp 00000000 00:00 0 
+b39bd000-b3a74000 rwxp 00000000 00:00 0 
+b3a74000-b3cb4000 rwxp 00000000 00:00 0 
+b3cb4000-b6a74000 rwxp 00000000 00:00 0 
+b6a74000-b6a83000 r-xp 00000000 08:01 655410     /opt/java/jdk1.6.0_20/jre/lib/i386/libzip.so
+b6a83000-b6a85000 rwxp 0000e000 08:01 655410     /opt/java/jdk1.6.0_20/jre/lib/i386/libzip.so
+b6a85000-b6a8f000 r-xp 00000000 08:01 4460247    /lib/libnss_files-2.12.1.so
+b6a8f000-b6a90000 r-xp 00009000 08:01 4460247    /lib/libnss_files-2.12.1.so
+b6a90000-b6a91000 rwxp 0000a000 08:01 4460247    /lib/libnss_files-2.12.1.so
+b6a91000-b6a9a000 r-xp 00000000 08:01 4460255    /lib/libnss_nis-2.12.1.so
+b6a9a000-b6a9b000 r-xp 00008000 08:01 4460255    /lib/libnss_nis-2.12.1.so
+b6a9b000-b6a9c000 rwxp 00009000 08:01 4460255    /lib/libnss_nis-2.12.1.so
+b6aa6000-b6aae000 rwxs 00000000 08:01 6553709    /tmp/hsperfdata_roodt/6141
+b6aae000-b6ac1000 r-xp 00000000 08:01 4460258    /lib/libnsl-2.12.1.so
+b6ac1000-b6ac2000 r-xp 00012000 08:01 4460258    /lib/libnsl-2.12.1.so
+b6ac2000-b6ac3000 rwxp 00013000 08:01 4460258    /lib/libnsl-2.12.1.so
+b6ac3000-b6ac5000 rwxp 00000000 00:00 0 
+b6ac8000-b6ace000 r-xp 00000000 08:01 4460262    /lib/libnss_compat-2.12.1.so
+b6ace000-b6acf000 r-xp 00006000 08:01 4460262    /lib/libnss_compat-2.12.1.so
+b6acf000-b6ad0000 rwxp 00007000 08:01 4460262    /lib/libnss_compat-2.12.1.so
+b6ad0000-b6ad6000 r-xp 00000000 08:01 655392     /opt/java/jdk1.6.0_20/jre/lib/i386/native_threads/libhpi.so
+b6ad6000-b6ad7000 rwxp 00006000 08:01 655392     /opt/java/jdk1.6.0_20/jre/lib/i386/native_threads/libhpi.so
+b6ad7000-b6afa000 r-xp 00000000 08:01 655406     /opt/java/jdk1.6.0_20/jre/lib/i386/libjava.so
+b6afa000-b6afc000 rwxp 00023000 08:01 655406     /opt/java/jdk1.6.0_20/jre/lib/i386/libjava.so
+b6afc000-b6b03000 r-xp 00000000 08:01 4460253    /lib/librt-2.12.1.so
+b6b03000-b6b04000 r-xp 00006000 08:01 4460253    /lib/librt-2.12.1.so
+b6b04000-b6b05000 rwxp 00007000 08:01 4460253    /lib/librt-2.12.1.so
+b6b05000-b6b08000 ---p 00000000 00:00 0 
+b6b08000-b6b56000 rwxp 00000000 00:00 0 
+b6b56000-b6b7a000 r-xp 00000000 08:01 4460261    /lib/libm-2.12.1.so
+b6b7a000-b6b7b000 r-xp 00023000 08:01 4460261    /lib/libm-2.12.1.so
+b6b7b000-b6b7c000 rwxp 00024000 08:01 4460261    /lib/libm-2.12.1.so
+b6b7c000-b7288000 r-xp 00000000 08:01 655394     /opt/java/jdk1.6.0_20/jre/lib/i386/server/libjvm.so
+b7288000-b72d9000 rwxp 0070b000 08:01 655394     /opt/java/jdk1.6.0_20/jre/lib/i386/server/libjvm.so
+b72d9000-b76f8000 rwxp 00000000 00:00 0 
+b76f8000-b784f000 r-xp 00000000 08:01 4460263    /lib/libc-2.12.1.so
+b784f000-b7851000 r-xp 00157000 08:01 4460263    /lib/libc-2.12.1.so
+b7851000-b7852000 rwxp 00159000 08:01 4460263    /lib/libc-2.12.1.so
+b7852000-b7855000 rwxp 00000000 00:00 0 
+b7855000-b7857000 r-xp 00000000 08:01 4460251    /lib/libdl-2.12.1.so
+b7857000-b7858000 r-xp 00001000 08:01 4460251    /lib/libdl-2.12.1.so
+b7858000-b7859000 rwxp 00002000 08:01 4460251    /lib/libdl-2.12.1.so
+b7859000-b7860000 r-xp 00000000 08:01 655408     /opt/java/jdk1.6.0_20/jre/lib/i386/jli/libjli.so
+b7860000-b7862000 rwxp 00006000 08:01 655408     /opt/java/jdk1.6.0_20/jre/lib/i386/jli/libjli.so
+b7862000-b7863000 rwxp 00000000 00:00 0 
+b7863000-b7878000 r-xp 00000000 08:01 4460265    /lib/libpthread-2.12.1.so
+b7878000-b7879000 ---p 00015000 08:01 4460265    /lib/libpthread-2.12.1.so
+b7879000-b787a000 r-xp 00015000 08:01 4460265    /lib/libpthread-2.12.1.so
+b787a000-b787b000 rwxp 00016000 08:01 4460265    /lib/libpthread-2.12.1.so
+b787b000-b787d000 rwxp 00000000 00:00 0 
+b7881000-b7882000 rwxp 00000000 00:00 0 
+b7882000-b7883000 r-xp 00000000 00:00 0 
+b7883000-b788e000 r-xp 00000000 08:01 655405     /opt/java/jdk1.6.0_20/jre/lib/i386/libverify.so
+b788e000-b788f000 rwxp 0000b000 08:01 655405     /opt/java/jdk1.6.0_20/jre/lib/i386/libverify.so
+b788f000-b7891000 rwxp 00000000 00:00 0 
+b7891000-b7892000 r-xp 00000000 00:00 0          [vdso]
+b7892000-b78ae000 r-xp 00000000 08:01 4460244    /lib/ld-2.12.1.so
+b78ae000-b78af000 r-xp 0001b000 08:01 4460244    /lib/ld-2.12.1.so
+b78af000-b78b0000 rwxp 0001c000 08:01 4460244    /lib/ld-2.12.1.so
+bfa99000-bfaba000 rwxp 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:/opt/android-sdk-linux_x86/platforms/android-8/android.jar 
+java_command: groodt.eratosthenes.EratosthenesPrimesStepper
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/opt/java/jdk1.6.0_20
+PATH=/opt/java/jdk1.6.0_20/bin:/opt/apache-maven-2.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+USERNAME=roodt
+LD_LIBRARY_PATH=/opt/java/jdk1.6.0_20/jre/lib/i386/server:/opt/java/jdk1.6.0_20/jre/lib/i386:/opt/java/jdk1.6.0_20/jre/../lib/i386:/usr/lib/xulrunner-addons
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x68d5c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x68d5c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x55cb30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x55cb30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x55cb30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x55cb30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x55f770], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:squeeze/sid
+
+uname:Linux 2.6.35-24-generic #42-Ubuntu SMP Thu Dec 2 01:41:57 UTC 2010 i686
+libc:glibc 2.12.1 NPTL 2.12.1 
+rlimit: STACK 8192k, CORE 0k, NPROC infinity, NOFILE 1024, AS infinity
+load average:0.89 0.71 0.65
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 3025888k(689700k free), swap 8864764k(8819560k free)
+
+vm_info: Java HotSpot(TM) Server VM (16.3-b01) for linux-x86 JRE (1.6.0_20-b02), built on Apr 12 2010 13:58:11 by "java_re" with gcc 3.2.1-7a (J2SE release)
+
+time: Mon Jan 10 13:15:06 2011
+elapsed time: 0 seconds
+
